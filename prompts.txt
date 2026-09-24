@@ -1,0 +1,11 @@
+You are my coding partner for a live vibe-coding session. We are building a production-minded Workshop Planner API using Python, FastAPI, OpenAPI, and the Azure Cosmos DB Python SDK and Azure Cosmos DB. Work in parallel with subagents. Before changing files, inspect the existing project and summarize your plan. Make small, reviewable changes, explain important decisions, and run the smallest relevant validation after each step. Do not add unnecessary abstractions or dependencies. Never invent credentials or connection strings. We will be using the Azure Cosmos DB vNext Linux Emulator via Docker for our database.  Use the common connection string and be aware of SSL
+
+
+Build an API for workshops with these fields: id, title, description, startTime, endTime, organizerId, and status. Create these endpoints: POST /workshops, GET /workshops, GET /workshops/{id}, PUT /workshops/{id}, DELETE /workshops/{id}, and GET /health. Start with the project structure, models, and route definitions only. Do not implement persistence yet.
+
+•  POST /workshops creates a new workshop using the submitted details. 
+•  GET /workshops returns a list of workshops. 
+•  GET /workshops/{id} returns the details of the workshop with the specified ID. 
+•  PUT /workshops/{id} replaces the details of the workshop with the specified ID using the submitted values. 
+•  DELETE /workshops/{id} deletes the workshop with the specified ID. 
+•  GET /health checks whether the API is running and responding to requests.
