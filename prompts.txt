@@ -9,3 +9,12 @@ Build an API for workshops with these fields: id, title, description, startTime,
 •  PUT /workshops/{id} replaces the details of the workshop with the specified ID using the submitted values. 
 •  DELETE /workshops/{id} deletes the workshop with the specified ID. 
 •  GET /health checks whether the API is running and responding to requests.
+
+Integrate the official Azure Cosmos DB SDK for python, make sure you use the latest version. Use environment-based
+configuration for the endpoint and credential. Create a repository or data-access layer for the workshops container.
+Propose two possible partition keys, explain the tradeoffs, and recommend one based on the expected access patterns. 
+Wait for the approval before implementing the choice.
+
+Review the current API as a production engineer. Look for missing validation, inconsistent errors, unsafe configuration, 
+inefficient Cosmos DB calls, missing pagination, retry concerns, logging gaps and weak tests. List findings by priority.
+Do not modify code yet. Keep the public API stable and explain each change.
